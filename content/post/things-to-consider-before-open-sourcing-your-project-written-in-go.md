@@ -1,5 +1,5 @@
 +++
-date = "2016-03-27T11:56:13+02:00"
+date = "2015-11-26"
 description = ""
 title = "Things to consider before open sourcing your project written in go"
 tags = ["golang", "guide"]

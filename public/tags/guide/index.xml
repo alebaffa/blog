@@ -9,15 +9,15 @@
     <managingEditor>yourname@example.com (Alessandro Baffa)</managingEditor>
     <webMaster>yourname@example.com (Alessandro Baffa)</webMaster>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
-    <lastBuildDate>Sun, 27 Mar 2016 11:56:13 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://alebaffa.github.io/blog/tags/guide/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Things to consider before open sourcing your project written in go</title>
-      <link>http://alebaffa.github.io/blog/2016/03/27/things-to-consider-before-open-sourcing-your-project-written-in-go/</link>
-      <pubDate>Sun, 27 Mar 2016 11:56:13 +0200</pubDate>
+      <link>http://alebaffa.github.io/blog/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
       <author>yourname@example.com (Alessandro Baffa)</author>
-      <guid>http://alebaffa.github.io/blog/2016/03/27/things-to-consider-before-open-sourcing-your-project-written-in-go/</guid>
+      <guid>http://alebaffa.github.io/blog/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</guid>
       <description>
 
 &lt;p&gt;so, you want to finally release your &lt;em&gt;preciousss&lt;/em&gt; written in Go to the open source community. Great! And thank you.

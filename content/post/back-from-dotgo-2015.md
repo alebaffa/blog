@@ -1,5 +1,5 @@
 +++
-date = "2016-03-27T12:06:16+02:00"
+date = "2015-11-10"
 description = ""
 title = "Back from dotgo 2015"
 tags = ["golang", "conferences"]

@@ -2,7 +2,7 @@
 baseurl = "http://alebaffa.github.io/blog"
 
 # Site title
-title = "A programmer's diary"
+# title = "A programmer's diary"
 
 # Copyright
 copyright = "(c) 2015 Alessandro Baffa."
@@ -41,8 +41,8 @@ disqusShortname = "alessandrobaffa"
 #
 [params]
     # You can use markdown here.
-    brand = "Alessandro Baffa"
-    topline = "Programmer and Developer Advocate"
+    brand = "The Long Road"
+    topline = "Personal log of my learning journey."
     footline = "code with <i class='fa fa-heart'></i>"
 
     # Sidebar position

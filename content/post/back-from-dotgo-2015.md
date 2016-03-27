@@ -4,7 +4,7 @@ description = ""
 title = "Back from dotgo 2015"
 
 +++
-![alt text](img/dotgo.jpeg "dotgo2015")
+![alt text](../../img/dotgo.jpeg "dotgo2015")
 
 Today I’ve been at the dotGo conference in Paris, the European conference about the Go programming language. Quick summary: **fantastic!**
 

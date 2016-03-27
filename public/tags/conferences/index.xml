@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conferences on A programmer&#39;s diary</title>
-    <link>http://localhost:1313/tags/conferences/</link>
+    <link>http://alebaffa.github.io/blog/tags/conferences/</link>
     <description>Recent content in Conferences on A programmer&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
@@ -10,14 +10,14 @@
     <webMaster>yourname@example.com (Alessandro Baffa)</webMaster>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
     <lastBuildDate>Sun, 27 Mar 2016 12:06:16 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://alebaffa.github.io/blog/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Back from dotgo 2015</title>
-      <link>http://localhost:1313/2016/03/27/back-from-dotgo-2015/</link>
+      <link>http://alebaffa.github.io/blog/2016/03/27/back-from-dotgo-2015/</link>
       <pubDate>Sun, 27 Mar 2016 12:06:16 +0200</pubDate>
       <author>yourname@example.com (Alessandro Baffa)</author>
-      <guid>http://localhost:1313/2016/03/27/back-from-dotgo-2015/</guid>
+      <guid>http://alebaffa.github.io/blog/2016/03/27/back-from-dotgo-2015/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../../../img/dotgo.jpeg&#34; alt=&#34;alt text&#34; title=&#34;dotgo2015&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Today I’ve been at the dotGo conference in Paris, the European conference about the Go programming language. Quick summary: &lt;strong&gt;fantastic!&lt;/strong&gt;&lt;/p&gt;

@@ -4,6 +4,7 @@ description = ""
 title = "Surrounding yourself with the right people"
 
 +++
+![alt text](../../img/cerini.jpeg "passion")
 I was 8 years old when I started playing guitar. It was not my choice, though, but my parents’ who forced me to start taking some lessons. I hated it at the beginning: hours of solfège, and I wasn’t even able to play the most stupid song. No chords, nothing at all.
 
 Nevertheless I had some natural talent for music (I’m gifted with the so called musical ear. And so my brother and sister are - the Force is strong in my family), and maybe my parents knew that and that’s why they persisted so much with me.

@@ -2,6 +2,8 @@
 date = "2016-03-27T11:56:13+02:00"
 description = ""
 title = "Things to consider before open sourcing your project written in go"
+tags = ["golang", "guide"]
+categories = ["golang"]
 
 +++
 so, you want to finally release your _preciousss_ written in Go to the open source community. Great! And thank you.

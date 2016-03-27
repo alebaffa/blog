@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on A programmer&#39;s diary</title>
+    <link>http://localhost:1313/tags/golang/</link>
+    <description>Recent content in Golang on A programmer&#39;s diary</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-EN</language>
+    <managingEditor>yourname@example.com (Alessandro Baffa)</managingEditor>
+    <webMaster>yourname@example.com (Alessandro Baffa)</webMaster>
+    <copyright>(c) 2015 Alessandro Baffa.</copyright>
+    <lastBuildDate>Sun, 27 Mar 2016 12:06:16 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Back from dotgo 2015</title>
+      <link>http://localhost:1313/2016/03/27/back-from-dotgo-2015/</link>
+      <pubDate>Sun, 27 Mar 2016 12:06:16 +0200</pubDate>
+      <author>yourname@example.com (Alessandro Baffa)</author>
+      <guid>http://localhost:1313/2016/03/27/back-from-dotgo-2015/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../../../img/dotgo.jpeg&#34; alt=&#34;alt text&#34; title=&#34;dotgo2015&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Today I’ve been at the dotGo conference in Paris, the European conference about the Go programming language. Quick summary: &lt;strong&gt;fantastic!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s the second time I participate (I’ve been there also last year, 2014) and I found exactly the same impeccable organization, a beautiful location (with lots of food..), a great ambiance, and the talks, as usual, have been extremely interesting, inspiring and cool. Some of them (not in the same order of the conference):&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Things to consider before open sourcing your project written in go</title>
+      <link>http://localhost:1313/2016/03/27/things-to-consider-before-open-sourcing-your-project-written-in-go/</link>
+      <pubDate>Sun, 27 Mar 2016 11:56:13 +0200</pubDate>
+      <author>yourname@example.com (Alessandro Baffa)</author>
+      <guid>http://localhost:1313/2016/03/27/things-to-consider-before-open-sourcing-your-project-written-in-go/</guid>
+      <description>
+
+&lt;p&gt;so, you want to finally release your &lt;em&gt;preciousss&lt;/em&gt; written in Go to the open source community. Great! And thank you.
+Though, there are few things you may want to consider before doing the big step. Things that you may have missed perhaps because you are not yet 100% comfortable with Go (but “_I will improve later. Now let me just put this gem on Github._”).
+You have to know that the Go community can be quite strict when it comes to its idioms and conventions. And they are right, in my opinion. So, in order to avoid hundred of issues and pull requests on Github focused mainly on code style and best practices, and not on the real core of your project, check these following few things before pushing your code.&lt;/p&gt;
+
+&lt;h2 id=&#34;be-sure-you-read-effective-go&#34;&gt;Be sure you read Effective Go&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://golang.org/doc/effective_go.html&#34;&gt;Effective Go&lt;/a&gt; contains all the tips you need to know in order to write clear and idiomatic Go code. You will learn all the best practices and the conventions used and followed by the Go community.
+Effective Go is essential not only for newbies programmers, but also (and foremost) for those coming from other programming languages.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A straightforward translation of a C++ or Java program into Go is unlikely to produce a satisfactory result — Java programs are written in Java, not Go.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;avoid-common-mistakes&#34;&gt;Avoid common mistakes&lt;/h2&gt;
+
+&lt;p&gt;The Go community over the years has identified some common mistakes made in Go projects, and so common comments in the code reviews. These comments are now collected in the &lt;a href=&#34;https://github.com/golang/go/wiki/CodeReviewComments&#34;&gt;Go Code Review Comments&lt;/a&gt; page.
+Be sure not to make these common mistakes yourself, so give a read to that page.&lt;/p&gt;
+
+&lt;h2 id=&#34;use-all-the-tools&#34;&gt;Use all the tools&lt;/h2&gt;
+
+&lt;p&gt;Go comes with some amazing tools that allow you to write idiomatic Go with less effort. Be sure to check all your code with, at least, these few ones:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/cmd/gofmt/&#34;&gt;gofmt&lt;/a&gt;: to automatically formats Go source code.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/golang/lint&#34;&gt;golint&lt;/a&gt;: to print out code style mistakes.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://golang.org/cmd/vet/&#34;&gt;govet&lt;/a&gt;: to examine the code and report suspicious constructs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Only by using at least these 3 tools you can manage to write clear and idiomatic Go code and avoid a lot of issues and pull requests. And they also help you to learn Go in the proper way :) .
+&lt;strong&gt;Good news&lt;/strong&gt;. The Go community is so good that there are plugins for the most used IDE: &lt;a href=&#34;https://github.com/DisposaBoy/GoSublime&#34;&gt;GoSublime&lt;/a&gt; and the &lt;a href=&#34;https://forum.golangbridge.org/t/beta-testers-wanted-sublimetext-go/1282&#34;&gt;official Google plugin&lt;/a&gt; (in test) for SublimeText, &lt;a href=&#34;https://atom.io/packages/go-plus&#34;&gt;GoPlus&lt;/a&gt; for Atom, &lt;a href=&#34;https://github.com/fatih/vim-go&#34;&gt;vim-go&lt;/a&gt; for Vim and, incredibly enough, VisualStudio has a lot of good reviews for Go.
+There are a lot of other IDE, but these ones, apparently, are the most used ones by the community.&lt;/p&gt;
+
+&lt;h2 id=&#34;stay-up-to-date-with-the-go-development&#34;&gt;Stay up-to-date with the Go development&lt;/h2&gt;
+
+&lt;p&gt;If you are open sourcing a Go project chances are that you may be impacted by changes in the Go libraries, or whatever can happen with the development of Go in general. It’s better to stay up-to-date with what happens and follow the discussions on these Google Groups:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!forum/golang-dev&#34;&gt;golang-dev&lt;/a&gt;: discussions of the development of the Go project.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!forum/golang-nuts&#34;&gt;golang-nuts&lt;/a&gt;: general discussion list for the Go Programming Language.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;be-part-of-the-community&#34;&gt;Be part of the community&lt;/h2&gt;
+
+&lt;p&gt;The Go community is super active. Just go &lt;a href=&#34;https://github.com/golang/go/wiki#the-go-community&#34;&gt;here&lt;/a&gt; to choose how you want to follow it. It’s important to follow the discussions if you’re seriously working with Go, you may discover useful things, or you could get to know important developments or projects that can impact your work.
+And don’t forget the &lt;a href=&#34;https://golang.org/conduct&#34;&gt;Code of Conduct&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Good! Now that you know what to check .. just to do it and let us know when your preciousss will be available for us to enjoy! :)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

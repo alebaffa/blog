@@ -2,9 +2,11 @@
 date = "2016-03-27T12:06:16+02:00"
 description = ""
 title = "Back from dotgo 2015"
+tags = ["golang", "conferences"]
+categories = ["conference", "learning"]
 
 +++
-![alt text](../../img/dotgo.jpeg "dotgo2015")
+![alt text](../../../../img/dotgo.jpeg "dotgo2015")
 
 Today I’ve been at the dotGo conference in Paris, the European conference about the Go programming language. Quick summary: **fantastic!**
 

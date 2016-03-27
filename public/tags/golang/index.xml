@@ -38,7 +38,7 @@
 Though, there are few things you may want to consider before doing the big step. Things that you may have missed perhaps because you are not yet 100% comfortable with Go (but “_I will improve later. Now let me just put this gem on Github._”).
 You have to know that the Go community can be quite strict when it comes to its idioms and conventions. And they are right, in my opinion. So, in order to avoid hundred of issues and pull requests on Github focused mainly on code style and best practices, and not on the real core of your project, check these following few things before pushing your code.&lt;/p&gt;
 
-&lt;h2 id=&#34;be-sure-you-read-effective-go&#34;&gt;Be sure you read Effective Go&lt;/h2&gt;
+&lt;h2 id=&#34;be-sure-you-read-effective-go:4d0de480b34d2f2804a1a5f468baab59&#34;&gt;Be sure you read Effective Go&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://golang.org/doc/effective_go.html&#34;&gt;Effective Go&lt;/a&gt; contains all the tips you need to know in order to write clear and idiomatic Go code. You will learn all the best practices and the conventions used and followed by the Go community.
 Effective Go is essential not only for newbies programmers, but also (and foremost) for those coming from other programming languages.&lt;/p&gt;
@@ -47,12 +47,12 @@ Effective Go is essential not only for newbies programmers, but also (and foremo
 &lt;p&gt;A straightforward translation of a C++ or Java program into Go is unlikely to produce a satisfactory result — Java programs are written in Java, not Go.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2 id=&#34;avoid-common-mistakes&#34;&gt;Avoid common mistakes&lt;/h2&gt;
+&lt;h2 id=&#34;avoid-common-mistakes:4d0de480b34d2f2804a1a5f468baab59&#34;&gt;Avoid common mistakes&lt;/h2&gt;
 
 &lt;p&gt;The Go community over the years has identified some common mistakes made in Go projects, and so common comments in the code reviews. These comments are now collected in the &lt;a href=&#34;https://github.com/golang/go/wiki/CodeReviewComments&#34;&gt;Go Code Review Comments&lt;/a&gt; page.
 Be sure not to make these common mistakes yourself, so give a read to that page.&lt;/p&gt;
 
-&lt;h2 id=&#34;use-all-the-tools&#34;&gt;Use all the tools&lt;/h2&gt;
+&lt;h2 id=&#34;use-all-the-tools:4d0de480b34d2f2804a1a5f468baab59&#34;&gt;Use all the tools&lt;/h2&gt;
 
 &lt;p&gt;Go comes with some amazing tools that allow you to write idiomatic Go with less effort. Be sure to check all your code with, at least, these few ones:&lt;/p&gt;
 
@@ -66,7 +66,7 @@ Be sure not to make these common mistakes yourself, so give a read to that page.
 &lt;strong&gt;Good news&lt;/strong&gt;. The Go community is so good that there are plugins for the most used IDE: &lt;a href=&#34;https://github.com/DisposaBoy/GoSublime&#34;&gt;GoSublime&lt;/a&gt; and the &lt;a href=&#34;https://forum.golangbridge.org/t/beta-testers-wanted-sublimetext-go/1282&#34;&gt;official Google plugin&lt;/a&gt; (in test) for SublimeText, &lt;a href=&#34;https://atom.io/packages/go-plus&#34;&gt;GoPlus&lt;/a&gt; for Atom, &lt;a href=&#34;https://github.com/fatih/vim-go&#34;&gt;vim-go&lt;/a&gt; for Vim and, incredibly enough, VisualStudio has a lot of good reviews for Go.
 There are a lot of other IDE, but these ones, apparently, are the most used ones by the community.&lt;/p&gt;
 
-&lt;h2 id=&#34;stay-up-to-date-with-the-go-development&#34;&gt;Stay up-to-date with the Go development&lt;/h2&gt;
+&lt;h2 id=&#34;stay-up-to-date-with-the-go-development:4d0de480b34d2f2804a1a5f468baab59&#34;&gt;Stay up-to-date with the Go development&lt;/h2&gt;
 
 &lt;p&gt;If you are open sourcing a Go project chances are that you may be impacted by changes in the Go libraries, or whatever can happen with the development of Go in general. It’s better to stay up-to-date with what happens and follow the discussions on these Google Groups:&lt;/p&gt;
 
@@ -75,7 +75,7 @@ There are a lot of other IDE, but these ones, apparently, are the most used ones
 &lt;li&gt;&lt;a href=&#34;https://groups.google.com/forum/#!forum/golang-nuts&#34;&gt;golang-nuts&lt;/a&gt;: general discussion list for the Go Programming Language.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;be-part-of-the-community&#34;&gt;Be part of the community&lt;/h2&gt;
+&lt;h2 id=&#34;be-part-of-the-community:4d0de480b34d2f2804a1a5f468baab59&#34;&gt;Be part of the community&lt;/h2&gt;
 
 &lt;p&gt;The Go community is super active. Just go &lt;a href=&#34;https://github.com/golang/go/wiki#the-go-community&#34;&gt;here&lt;/a&gt; to choose how you want to follow it. It’s important to follow the discussions if you’re seriously working with Go, you may discover useful things, or you could get to know important developments or projects that can impact your work.
 And don’t forget the &lt;a href=&#34;https://golang.org/conduct&#34;&gt;Code of Conduct&lt;/a&gt;.&lt;/p&gt;

@@ -9,15 +9,15 @@
     <managingEditor>yourname@example.com (Alessandro Baffa)</managingEditor>
     <webMaster>yourname@example.com (Alessandro Baffa)</webMaster>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
-    <lastBuildDate>Sun, 27 Mar 2016 12:06:16 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://alebaffa.github.io/blog/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Back from dotgo 2015</title>
-      <link>http://alebaffa.github.io/blog/2016/03/27/back-from-dotgo-2015/</link>
-      <pubDate>Sun, 27 Mar 2016 12:06:16 +0200</pubDate>
+      <link>http://alebaffa.github.io/blog/2015/11/10/back-from-dotgo-2015/</link>
+      <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
       <author>yourname@example.com (Alessandro Baffa)</author>
-      <guid>http://alebaffa.github.io/blog/2016/03/27/back-from-dotgo-2015/</guid>
+      <guid>http://alebaffa.github.io/blog/2015/11/10/back-from-dotgo-2015/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../../../img/dotgo.jpeg&#34; alt=&#34;alt text&#34; title=&#34;dotgo2015&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Today I’ve been at the dotGo conference in Paris, the European conference about the Go programming language. Quick summary: &lt;strong&gt;fantastic!&lt;/strong&gt;&lt;/p&gt;

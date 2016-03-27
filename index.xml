@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A programmer&#39;s diary</title>
+    <title></title>
     <link>http://alebaffa.github.io/blog/</link>
-    <description>Recent content on A programmer&#39;s diary</description>
+    <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <managingEditor>yourname@example.com (Alessandro Baffa)</managingEditor>
@@ -128,7 +128,14 @@ And don’t forget the &lt;a href=&#34;https://golang.org/conduct&#34;&gt;Code o
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>yourname@example.com (Alessandro Baffa)</author>
       <guid>http://alebaffa.github.io/blog/about/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;img src=&#34;../img/speaker.jpg&#34; alt=&#34;alebaffa&#34; style=&#34;width: 300px; float: left; margin-right: 20px&#34;/&gt; Hi, my name is &lt;strong&gt;Alessandro Baffa&lt;/strong&gt;, I am an Italian Software Engineer and Developer Advocate at &lt;a href=&#34;http://www.amadeus.com&#34;&gt;Amadeus IT Group&lt;/a&gt;. More info on &lt;a href=&#34;https://www.linkedin.com/in/alessandrobaffa&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I am very interested in software engineering, with a particular focus on OOP, testing and web programming.&lt;/p&gt;
+
+&lt;p&gt;I am a strong advocate of clean code and good practices, and I am firmly convinced that a good professional should never stop learning.&lt;/p&gt;
+
+&lt;p&gt;This blog contains what I am finding on my personal journey towards software craftsmanship.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

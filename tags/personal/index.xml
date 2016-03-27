@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Personal on A programmer&#39;s diary</title>
-    <link>http://localhost:1313/tags/personal/</link>
+    <link>http://alebaffa.github.io/blog/tags/personal/</link>
     <description>Recent content in Personal on A programmer&#39;s diary</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
@@ -10,14 +10,14 @@
     <webMaster>yourname@example.com (Alessandro Baffa)</webMaster>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
     <lastBuildDate>Sun, 27 Mar 2016 12:14:26 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://alebaffa.github.io/blog/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Surrounding yourself with the right people</title>
-      <link>http://localhost:1313/2016/03/27/surrounding-yourself-with-the-right-people/</link>
+      <link>http://alebaffa.github.io/blog/2016/03/27/surrounding-yourself-with-the-right-people/</link>
       <pubDate>Sun, 27 Mar 2016 12:14:26 +0200</pubDate>
       <author>yourname@example.com (Alessandro Baffa)</author>
-      <guid>http://localhost:1313/2016/03/27/surrounding-yourself-with-the-right-people/</guid>
+      <guid>http://alebaffa.github.io/blog/2016/03/27/surrounding-yourself-with-the-right-people/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../../../img/cerini.jpeg&#34; alt=&#34;alt text&#34; title=&#34;passion&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was 8 years old when I started playing guitar. It was not my choice, though, but my parents’ who forced me to start taking some lessons. I hated it at the beginning: hours of solfège, and I wasn’t even able to play the most stupid song. No chords, nothing at all.&lt;/p&gt;

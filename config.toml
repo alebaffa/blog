@@ -1,22 +1,17 @@
 # hostname (and path) to the root eg. http://spf13.com/
-baseurl = "http://alebaffa.github.io/blog/"
-
+baseurl = "http://localhost:1313"
 # Site title
-# title = "A programmer's diary"
+title = "The Long Journey"
 
 # Copyright
 copyright = "(c) 2015 Alessandro Baffa."
-
 # Language
 languageCode = "en-EN"
-
 # Metadata format
 # "yaml", "toml", "json"
 metaDataFormat = "toml"
-
 # Theme to use (located in /themes/THEMENAME/)
-theme = "hyde-y"
-
+theme = "hyde-x"
 # Pagination
 paginate = 10
 paginatePath = "page"
@@ -25,40 +20,51 @@ paginatePath = "page"
 disqusShortname = "alebaffa"
 
 [permalinks]
-    post = "/:year/:month/:day/:slug/"
-    code = "/:slug/"
+    post = ":year/:month/:day/:title/"
 
 [taxonomies]
-    tag = "tags"
-    topic = "topics"
+# Optional. Use if you want tags and lists.
+    category = "categories"
 
 [author]
-    name = "Alessandro Baffa"
-    email = "yourname@example.com"
+    name = "The Long Journey"
 
 #
 # All parameters below here are optional and can be mixed and matched.
 #
 [params]
-    # You can use markdown here.
-    brand = "The Long Road"
-    topline = "Personal log of my learning journey."
-    footline = "code with <i class='fa fa-heart'></i>"
+    # If false display full article contents in blog index.
+    # Otherwise show description and 'read on' link to individual blog post page.
+    # Default (if omitted) is true.
+    truncate = false
 
-    # Sidebar position
-    # false, true, "left", "right"
-    sidebar = "left"
+    # Used when a given page doesn't set its own.
+    defaultDescription = "Personal log of my learning journey."
+    defaultKeywords = "programming, software craftsmanship"
 
-    # Text for the top menu link, which goes the root URL for the site.
-    # Default (if omitted) is "Home".
-    home = "home"
+    # Hide estimated reading time for posts.
+    # Default (if omitted) is false.
+    hideReadingTime = false
+
+    # Changes sidebar background and link/accent colours.
+    # See below for more colour options.
+    # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
+    theme = "theme-base-0d"
 
     # Select a syntax highight.
     # Check the static/css/highlight directory for options.
-    highlight = "default"
+    highlight = "sunburst"
 
-    # Google Analytics.
-    # googleAnalytics = "Your Google Analytics tracking code"
+    # Optional additional custom CSS file URL, will override other styles.
+    customCSS = ""
+
+    # Displays under the author name in the sidebar, keep it short.
+    # You can use markdown here.
+    tagline = "Personal log of my learning journey."
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Blog".
+    home = "Blog"
 
     # Sidebar social links.
     github = "alebaffa" # Your Github profile ID
@@ -70,11 +76,5 @@ disqusShortname = "alebaffa"
     # youtube = ""  # Your Youtube channel ID
     # flattr = ""  # populate with your flattr uid
 
-[blackfriday]
-    angledQuotes = true
-    fractions = false
-    hrefTargetBlank = false
-    latexDashes = true
-    plainIdAnchors = true
-    extensions = []
-    extensionmask = []
+    # Other social-like sidebar links
+    rss = true  # switch to true to enable RSS icon link

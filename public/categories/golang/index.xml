@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on The Long Journey</title>
-    <link>/categories/golang/</link>
+    <link>http://alebaffa.github.io/blog/categories/golang/</link>
     <description>Recent content in Golang on The Long Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
     <lastBuildDate>Thu, 26 Nov 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://alebaffa.github.io/blog/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Things to consider before open sourcing your project written in go</title>
-      <link>2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</link>
+      <link>http://alebaffa.github.io/blog/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</link>
       <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</guid>
+      <guid>http://alebaffa.github.io/blog/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</guid>
       <description>
 
 &lt;p&gt;so, you want to finally release your &lt;em&gt;preciousss&lt;/em&gt; written in Go to the open source community. Great! And thank you.

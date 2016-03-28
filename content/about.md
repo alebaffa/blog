@@ -5,7 +5,7 @@ subtitle: Why you'd want to go on a date with me
 menu : main
 
 ---
-<img src="../../img/speaker.jpg" alt="alebaffa" style="width: 300px; float: left; margin-right: 20px"/> Hi, my name is **Alessandro Baffa**, I am an Italian Software Engineer and Developer Advocate at [Amadeus IT Group](http://www.amadeus.com). More info on [LinkedIn](https://www.linkedin.com/in/alessandrobaffa).
+<img src="../img/speaker.jpg" alt="alebaffa" style="width: 300px; float: left; margin-right: 20px"/> Hi, my name is **Alessandro Baffa**, I am an Italian Software Engineer and Developer Advocate at [Amadeus IT Group](http://www.amadeus.com). More info on [LinkedIn](https://www.linkedin.com/in/alessandrobaffa).
 
 I am very interested in software engineering, with a particular focus on OOP, testing and web programming.
 

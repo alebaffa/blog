@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>http://alebaffa.github.io/blog/</link>
-    <description>Recent content on </description>
+    <title>The Long Journey</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on The Long Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
-    <managingEditor>yourname@example.com (Alessandro Baffa)</managingEditor>
-    <webMaster>yourname@example.com (Alessandro Baffa)</webMaster>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
     <lastBuildDate>Tue, 23 Feb 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://alebaffa.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Surrounding yourself with the right people</title>
-      <link>http://alebaffa.github.io/blog/2016/02/23/surrounding-yourself-with-the-right-people/</link>
+      <link>http://localhost:1313/2016/02/23/surrounding-yourself-with-the-right-people/</link>
       <pubDate>Tue, 23 Feb 2016 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (Alessandro Baffa)</author>
-      <guid>http://alebaffa.github.io/blog/2016/02/23/surrounding-yourself-with-the-right-people/</guid>
+      
+      <guid>http://localhost:1313/2016/02/23/surrounding-yourself-with-the-right-people/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../../../img/cerini.jpeg&#34; alt=&#34;alt text&#34; title=&#34;passion&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I was 8 years old when I started playing guitar. It was not my choice, though, but my parents’ who forced me to start taking some lessons. I hated it at the beginning: hours of solfège, and I wasn’t even able to play the most stupid song. No chords, nothing at all.&lt;/p&gt;
@@ -50,10 +48,10 @@ It’s also the reason why I like being a developer advocate, because I meet and
     
     <item>
       <title>Things to consider before open sourcing your project written in go</title>
-      <link>http://alebaffa.github.io/blog/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</link>
+      <link>http://localhost:1313/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</link>
       <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (Alessandro Baffa)</author>
-      <guid>http://alebaffa.github.io/blog/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</guid>
+      
+      <guid>http://localhost:1313/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</guid>
       <description>
 
 &lt;p&gt;so, you want to finally release your &lt;em&gt;preciousss&lt;/em&gt; written in Go to the open source community. Great! And thank you.
@@ -110,10 +108,10 @@ And don’t forget the &lt;a href=&#34;https://golang.org/conduct&#34;&gt;Code o
     
     <item>
       <title>Back from dotgo 2015</title>
-      <link>http://alebaffa.github.io/blog/2015/11/10/back-from-dotgo-2015/</link>
+      <link>http://localhost:1313/2015/11/10/back-from-dotgo-2015/</link>
       <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (Alessandro Baffa)</author>
-      <guid>http://alebaffa.github.io/blog/2015/11/10/back-from-dotgo-2015/</guid>
+      
+      <guid>http://localhost:1313/2015/11/10/back-from-dotgo-2015/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../../../img/dotgo.jpeg&#34; alt=&#34;alt text&#34; title=&#34;dotgo2015&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Today I’ve been at the dotGo conference in Paris, the European conference about the Go programming language. Quick summary: &lt;strong&gt;fantastic!&lt;/strong&gt;&lt;/p&gt;
@@ -124,11 +122,11 @@ And don’t forget the &lt;a href=&#34;https://golang.org/conduct&#34;&gt;Code o
     
     <item>
       <title>About me</title>
-      <link>http://alebaffa.github.io/blog/about/</link>
+      <link>http://localhost:1313/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>yourname@example.com (Alessandro Baffa)</author>
-      <guid>http://alebaffa.github.io/blog/about/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;../img/speaker.jpg&#34; alt=&#34;alebaffa&#34; style=&#34;width: 300px; float: left; margin-right: 20px&#34;/&gt; Hi, my name is &lt;strong&gt;Alessandro Baffa&lt;/strong&gt;, I am an Italian Software Engineer and Developer Advocate at &lt;a href=&#34;http://www.amadeus.com&#34;&gt;Amadeus IT Group&lt;/a&gt;. More info on &lt;a href=&#34;https://www.linkedin.com/in/alessandrobaffa&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+      
+      <guid>http://localhost:1313/page/about/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;../../img/speaker.jpg&#34; alt=&#34;alebaffa&#34; style=&#34;width: 300px; float: left; margin-right: 20px&#34;/&gt; Hi, my name is &lt;strong&gt;Alessandro Baffa&lt;/strong&gt;, I am an Italian Software Engineer and Developer Advocate at &lt;a href=&#34;http://www.amadeus.com&#34;&gt;Amadeus IT Group&lt;/a&gt;. More info on &lt;a href=&#34;https://www.linkedin.com/in/alessandrobaffa&#34;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I am very interested in software engineering, with a particular focus on OOP, testing and web programming.&lt;/p&gt;
 

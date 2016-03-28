@@ -14,7 +14,7 @@ metaDataFormat = "toml"
 theme = "hyde-x"
 # Pagination
 paginate = 10
-paginatePath = "page"
+# paginatePath = "page"
 
 # Enable Disqus integration
 disqusShortname = "alebaffa"
@@ -37,6 +37,7 @@ disqusShortname = "alebaffa"
     # Otherwise show description and 'read on' link to individual blog post page.
     # Default (if omitted) is true.
     truncate = false
+    gravatarHash = "c9a902d7e5ba17018faa82e853918277"
 
     # Used when a given page doesn't set its own.
     defaultDescription = "Personal log of my learning journey."

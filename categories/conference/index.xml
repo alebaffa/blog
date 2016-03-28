@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conference on The Long Journey</title>
-    <link>http://alebaffa.github.io/blog/categories/conference/</link>
+    <link>/categories/conference/</link>
     <description>Recent content in Conference on The Long Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
     <lastBuildDate>Tue, 10 Nov 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://alebaffa.github.io/blog/categories/conference/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/conference/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Back from dotgo 2015</title>
-      <link>http://alebaffa.github.io/blog/2015/11/10/back-from-dotgo-2015/</link>
+      <link>2015/11/10/back-from-dotgo-2015/</link>
       <pubDate>Tue, 10 Nov 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://alebaffa.github.io/blog/2015/11/10/back-from-dotgo-2015/</guid>
+      <guid>2015/11/10/back-from-dotgo-2015/</guid>
       <description>&lt;p&gt;&lt;img src=&#34;../../../../img/dotgo.jpeg&#34; alt=&#34;alt text&#34; title=&#34;dotgo2015&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Today I’ve been at the dotGo conference in Paris, the European conference about the Go programming language. Quick summary: &lt;strong&gt;fantastic!&lt;/strong&gt;&lt;/p&gt;

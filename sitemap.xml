@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://alebaffa.github.io/blog/</loc>
+    <loc>/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://alebaffa.github.io/blog/2016/02/23/surrounding-yourself-with-the-right-people/</loc>
+    <loc>2016/02/23/surrounding-yourself-with-the-right-people/</loc>
     <lastmod>2016-02-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alebaffa.github.io/blog/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</loc>
+    <loc>2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/</loc>
     <lastmod>2015-11-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alebaffa.github.io/blog/2015/11/10/back-from-dotgo-2015/</loc>
+    <loc>2015/11/10/back-from-dotgo-2015/</loc>
     <lastmod>2015-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://alebaffa.github.io/blog/page/about/</loc>
+    <loc>/page/about/</loc>
   </url>
   
 </urlset>

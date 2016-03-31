@@ -7,8 +7,85 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
-    <lastBuildDate>Tue, 23 Feb 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 31 Mar 2016 06:56:10 +0200</lastBuildDate>
     <atom:link href="http://alebaffa.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Be careful with slice</title>
+      <link>http://alebaffa.github.io/blog/2016/03/31/be-careful-with-slice/</link>
+      <pubDate>Thu, 31 Mar 2016 06:56:10 +0200</pubDate>
+      
+      <guid>http://alebaffa.github.io/blog/2016/03/31/be-careful-with-slice/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.golang.org/slices&#34;&gt;Slices&lt;/a&gt; are a great tool in Go, but sometimes they can be confused with arrays.
+A small reminder: slices are a pointer into an underline array. Let&amp;rsquo;s take this example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;array := []int{1, 2, 3, 4, 5, 6}
+slice := array[1:3]
+
+// let&#39;s print both
+fmt.Println(&amp;quot;array: &amp;quot;, array)
+fmt.Println(&amp;quot;slice: &amp;quot;, slice)
+
+// array:  [1 2 3 4 5 6]
+// slice: [2 3]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Since the slice is only a pointer to the underline array, if you do some operations with the elements of the array you are also changing the elements of the slice. Like this example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// let&#39;s double the first element of the array
+array[1] *= 2
+
+// let&#39;s print the array and the slice
+fmt.Println(&amp;quot;array: &amp;quot;, array)
+fmt.Println(&amp;quot;slice: &amp;quot;, slice)
+
+// array:  [1 4 3 4 5 6]
+// slice: [4 3]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A slice have two important properties:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;fmt.Println(&amp;quot;length of the slice: &amp;quot;, len(slice))
+fmt.Println(&amp;quot;capacity of the slice: &amp;quot;, cap(slice))
+
+// length of the slice: :  2
+// capacity of the slice: 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The length is the number of elements that the slice contains, while the capacity is the max number of elements it can contain.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s important to take care of what happens when the slice fulfills its capacity. Let&amp;rsquo;s continue the example by adding new things in the slice (and so in the array):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;middle = append(slice, 100)
+middle = append(slice, 101)
+middle = append(slice, 102)
+middle = append(slice, 103)
+
+// slice:  [4 3 99 100 101 102 103]
+// array:  [1 4 3 99 100 101]
+// capacity of slice:  10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The array has reached its length (6 elements), but the slice has been extended. It is actually been copied and moved and it became a new slice with double capacity (10. It was 5 before).&lt;/p&gt;
+
+&lt;p&gt;At this point the slice is not pointing anymore to that array. So, now if you do some operations to the underline array, the elements of the slice won&amp;rsquo;t change anymore. Example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;// let&#39;s double the first element of the array
+array[1] *= 2
+
+// let&#39;s print the array and the slice now:
+fmt.Println(&amp;quot;array: &amp;quot;, array)
+fmt.Println(&amp;quot;slice: &amp;quot;, slice)
+
+//array:  [1 8 3 99 100 101]
+//slice:  [4 3 99 100 101 102 103]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, the &lt;em&gt;array[1] = 8&lt;/em&gt;, but the corresponding element in the slice is still 4.&lt;/p&gt;
+
+&lt;p&gt;This is an important thing to take care of when you&amp;rsquo;re using slices. It can be really confusing. Always take care of the capacity in case your program is managing a lot of elements.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Surrounding yourself with the right people</title>

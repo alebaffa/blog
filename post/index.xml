@@ -55,15 +55,6 @@ func ConcurrentFrequency(words []string) map[rune]int {
     </item>
     
     <item>
-      <title>the paradox of choice in learning</title>
-      <link>http://alebaffa.github.io/blog/2016/05/16/the-paradox-of-choice-in-learning/</link>
-      <pubDate>Mon, 16 May 2016 15:37:25 +0200</pubDate>
-      
-      <guid>http://alebaffa.github.io/blog/2016/05/16/the-paradox-of-choice-in-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Bowling kata in Go</title>
       <link>http://alebaffa.github.io/blog/2016/05/16/bowling-kata-in-go/</link>
       <pubDate>Mon, 16 May 2016 12:10:33 +0200</pubDate>

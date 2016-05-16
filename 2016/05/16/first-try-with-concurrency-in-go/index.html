@@ -78,7 +78,7 @@
 <div class="content container">
   <div class="post">
     <h1 class="post-title">First try with concurrency in Go</h1>
-    <span class="post-date">May 16, 2016 &middot; 1 minute read &middot; <a href="http://alebaffa.github.io/blog/2016/05/16/first-try-with-concurrency-in-go/#disqus_thread">Comments</a>
+    <span class="post-date">May 16, 2016 &middot; 2 minute read &middot; <a href="http://alebaffa.github.io/blog/2016/05/16/first-try-with-concurrency-in-go/#disqus_thread">Comments</a>
     
     <br/>
     <a class="label" href="http://alebaffa.github.io/blog/categories/golang">golang</a>
@@ -89,8 +89,9 @@
 
 <p>The core of my solution is here (I let you read the comments).</p>
 
-<pre><code class="language-go">
-func Frequency(s string) map[rune]int {
+<p>Basically the exercise asks you to count the frequency of the letters in 3 different strings. They provide you with already a function that counts the frequency, but you are asked to call that function with 3 calls in parallel (one call for each string) and to collect the result (the total frequencies from all the 3 strings).</p>
+
+<pre><code class="language-go">func Frequency(s string) map[rune]int {
   //DO SOMETHING
 }
 func ConcurrentFrequency(words []string) map[rune]int {
@@ -114,6 +115,25 @@ func ConcurrentFrequency(words []string) map[rune]int {
 		}
 	}
   return frequency
+}
+</code></pre>
+
+<p>In this solution I am basically looping over the array of strings in input and call the Frequency() function on every iteration. The interesting thing is here:</p>
+
+<pre><code class="language-go">go func(v string){
+  channel &lt;- Frequency(v)
+}(value)
+</code></pre>
+
+<p>Here I&rsquo;m starting a <strong>goroutine</strong> on an <strong>anonymous function</strong> (the <em>go</em> prefix before <em>func</em>) inside of which I call Frequency(). The Frequency function sends its returned value in a <strong>channel</strong> (of the same type returned from the function). The channel is the way goroutines communicates with each other and so it&rsquo;s also the way to send values back.</p>
+
+<p>Once the channel contains the returned values, you can loop over the channel itself (not sure here if it&rsquo;s because it&rsquo;s a <em>buffered channel</em> and so with a specified capacity or I can do this every time, I still have to understand this).
+The channel is of type <em>map[rune]int</em> and so I can fetch <key, value> from it, like so:</p>
+
+<pre><code class="language-go">for range words {
+  for key, value := range &lt;-channel {
+    frequency[key] += value
+  }
 }
 </code></pre>
 

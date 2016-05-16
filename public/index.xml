@@ -7,8 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
-    <lastBuildDate>Thu, 31 Mar 2016 06:56:10 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 16 May 2016 12:10:33 +0200</lastBuildDate>
     <atom:link href="http://alebaffa.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Bowling kata in Go</title>
+      <link>http://alebaffa.github.io/blog/2016/05/16/bowling-kata-in-go/</link>
+      <pubDate>Mon, 16 May 2016 12:10:33 +0200</pubDate>
+      
+      <guid>http://alebaffa.github.io/blog/2016/05/16/bowling-kata-in-go/</guid>
+      <description>&lt;p&gt;This is my solution for the Bowling Kata, written in Go.&lt;/p&gt;
+
+&lt;script type=&#34;text/javascript&#34; src=&#34;http://gist.github.com/c3a6b863f905f1cc073d6611d3baafe2.js&#34;&gt;&lt;/script&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Be careful with slice</title>

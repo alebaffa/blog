@@ -13,8 +13,9 @@ Fortunately [exercism.io](http://exercism.io) has just introduced me to this top
 
 The core of my solution is here (I let you read the comments).
 
-``` go
+Basically the exercise asks you to count the frequency of the letters in 3 different strings. They provide you with already a function that counts the frequency, but you are asked to call that function with 3 calls in parallel (one call for each string) and to collect the result (the total frequencies from all the 3 strings).
 
+``` go
 func Frequency(s string) map[rune]int {
   //DO SOMETHING
 }
@@ -39,6 +40,27 @@ func ConcurrentFrequency(words []string) map[rune]int {
 		}
 	}
   return frequency
+}
+```
+
+In this solution I am basically looping over the array of strings in input and call the Frequency() function on every iteration. The interesting thing is here:
+
+``` go
+go func(v string){
+  channel <- Frequency(v)
+}(value)
+```
+
+Here I'm starting a **goroutine** on an **anonymous function** (the _go_ prefix before _func_) inside of which I call Frequency(). The Frequency function sends its returned value in a **channel** (of the same type returned from the function). The channel is the way goroutines communicates with each other and so it's also the way to send values back.
+
+Once the channel contains the returned values, you can loop over the channel itself (not sure here if it's because it's a _buffered channel_ and so with a specified capacity or I can do this every time, I still have to understand this).
+The channel is of type _map[rune]int_ and so I can fetch <key, value> from it, like so:
+
+``` go
+for range words {
+  for key, value := range <-channel {
+    frequency[key] += value
+  }
 }
 ```
 

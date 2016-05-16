@@ -22,8 +22,9 @@
 
 &lt;p&gt;The core of my solution is here (I let you read the comments).&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;
-func Frequency(s string) map[rune]int {
+&lt;p&gt;Basically the exercise asks you to count the frequency of the letters in 3 different strings. They provide you with already a function that counts the frequency, but you are asked to call that function with 3 calls in parallel (one call for each string) and to collect the result (the total frequencies from all the 3 strings).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func Frequency(s string) map[rune]int {
   //DO SOMETHING
 }
 func ConcurrentFrequency(words []string) map[rune]int {
@@ -47,6 +48,25 @@ func ConcurrentFrequency(words []string) map[rune]int {
 		}
 	}
   return frequency
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this solution I am basically looping over the array of strings in input and call the Frequency() function on every iteration. The interesting thing is here:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;go func(v string){
+  channel &amp;lt;- Frequency(v)
+}(value)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here I&amp;rsquo;m starting a &lt;strong&gt;goroutine&lt;/strong&gt; on an &lt;strong&gt;anonymous function&lt;/strong&gt; (the &lt;em&gt;go&lt;/em&gt; prefix before &lt;em&gt;func&lt;/em&gt;) inside of which I call Frequency(). The Frequency function sends its returned value in a &lt;strong&gt;channel&lt;/strong&gt; (of the same type returned from the function). The channel is the way goroutines communicates with each other and so it&amp;rsquo;s also the way to send values back.&lt;/p&gt;
+
+&lt;p&gt;Once the channel contains the returned values, you can loop over the channel itself (not sure here if it&amp;rsquo;s because it&amp;rsquo;s a &lt;em&gt;buffered channel&lt;/em&gt; and so with a specified capacity or I can do this every time, I still have to understand this).
+The channel is of type &lt;em&gt;map[rune]int&lt;/em&gt; and so I can fetch &lt;key, value&gt; from it, like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;for range words {
+  for key, value := range &amp;lt;-channel {
+    frequency[key] += value
+  }
 }
 &lt;/code&gt;&lt;/pre&gt;
 

@@ -54,7 +54,7 @@ disqusShortname = "alebaffa"
 
     # Select a syntax highight.
     # Check the static/css/highlight directory for options.
-    highlight = "sunburst"
+    highlight = "monokai_sublime"
 
     # Optional additional custom CSS file URL, will override other styles.
     customCSS = ""

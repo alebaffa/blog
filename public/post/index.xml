@@ -7,8 +7,61 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
     <copyright>(c) 2015 Alessandro Baffa.</copyright>
-    <lastBuildDate>Mon, 16 May 2016 12:10:33 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 16 May 2016 21:04:53 +0200</lastBuildDate>
     <atom:link href="http://alebaffa.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>First try with concurrency in Go</title>
+      <link>http://alebaffa.github.io/blog/2016/05/16/first-try-with-concurrency-in-go/</link>
+      <pubDate>Mon, 16 May 2016 21:04:53 +0200</pubDate>
+      
+      <guid>http://alebaffa.github.io/blog/2016/05/16/first-try-with-concurrency-in-go/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while I&amp;rsquo;m practicing with Go, but I had still never tried its concurrency features so far. My bad.&lt;/p&gt;
+
+&lt;p&gt;Fortunately &lt;a href=&#34;http://exercism.io&#34;&gt;exercism.io&lt;/a&gt; has just introduced me to this topic with the exercise &lt;a href=&#34;http://exercism.io/exercises/go/parallel-letter-frequency/readme&#34;&gt;&amp;ldquo;Parallel Letter Frequency&amp;rdquo; exercise&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The core of my solution is here (I let you read the comments).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;
+func Frequency(s string) map[rune]int {
+  //DO SOMETHING
+}
+func ConcurrentFrequency(words []string) map[rune]int {
+  // (buffered)channel if type map[run]int with capacity of the lenght of the input (3)
+	channel := make(chan map[rune]int, len(words))
+
+	for _, value := range words {
+		// anonymous function that calls Frequency() 3 times in parallel
+		// and puts the three different results in the channel of capacity 3
+		go func(v string){
+			channel &amp;lt;- Frequency(v)
+		}(value)
+	}
+
+  // Now use the values inside the channel.
+  frequency := map[rune]int
+	// loops 3 times because channel of size 3
+	for range words {
+		for key, value := range &amp;lt;-channel {
+			frequency[key] += value
+		}
+	}
+  return frequency
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Working with channels is very simple and powerful. There are plenty of things that I still have to learn, but this was a good start. &lt;strong&gt;Thanks Exercism.io&lt;/strong&gt;!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>the paradox of choice in learning</title>
+      <link>http://alebaffa.github.io/blog/2016/05/16/the-paradox-of-choice-in-learning/</link>
+      <pubDate>Mon, 16 May 2016 15:37:25 +0200</pubDate>
+      
+      <guid>http://alebaffa.github.io/blog/2016/05/16/the-paradox-of-choice-in-learning/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bowling kata in Go</title>

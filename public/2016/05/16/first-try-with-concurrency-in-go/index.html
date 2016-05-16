@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>The Long Journey &middot; The Long Journey</title>
+  <title>First try with concurrency in Go &middot; The Long Journey</title>
 
   
   <link rel="stylesheet" href="http://alebaffa.github.io/blog/css/poole.css">
@@ -27,10 +27,10 @@
   
   
   
-  <link href="http://alebaffa.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="The Long Journey &middot; The Long Journey" />
+  
 
   <meta name="description" content="Personal log of my learning journey.">
-  <meta name="keywords" content="programming, software craftsmanship">
+  <meta name="keywords" content="golang">
   
 </head>
 <body class="theme-base-0d">
@@ -76,63 +76,77 @@
 
 
 <div class="content container">
-  <ul class="posts">
-  
-    <li><a href="http://alebaffa.github.io/blog/2016/05/16/first-try-with-concurrency-in-go/">First try with concurrency in Go</a>
+  <div class="post">
+    <h1 class="post-title">First try with concurrency in Go</h1>
+    <span class="post-date">May 16, 2016 &middot; 1 minute read &middot; <a href="http://alebaffa.github.io/blog/2016/05/16/first-try-with-concurrency-in-go/#disqus_thread">Comments</a>
     
-    &middot;
+    <br/>
     <a class="label" href="http://alebaffa.github.io/blog/categories/golang">golang</a>
     </span>
-    &middot; <time>May 16, 2016</time></li>
-  
-    <li><a href="http://alebaffa.github.io/blog/2016/05/16/the-paradox-of-choice-in-learning/">the paradox of choice in learning</a>
-    
-    &middot;
-    
-    </span>
-    &middot; <time>May 16, 2016</time></li>
-  
-    <li><a href="http://alebaffa.github.io/blog/2016/05/16/bowling-kata-in-go/">Bowling kata in Go</a>
-    
-    &middot;
-    <a class="label" href="http://alebaffa.github.io/blog/categories/golang">golang</a><a class="label" href="http://alebaffa.github.io/blog/categories/code-kata">code-kata</a><a class="label" href="http://alebaffa.github.io/blog/categories/practice">practice</a>
-    </span>
-    &middot; <time>May 16, 2016</time></li>
-  
-    <li><a href="http://alebaffa.github.io/blog/2016/03/31/be-careful-with-slice/">Be careful with slice</a>
-    
-    &middot;
-    <a class="label" href="http://alebaffa.github.io/blog/categories/golang">golang</a>
-    </span>
-    &middot; <time>Mar 31, 2016</time></li>
-  
-    <li><a href="http://alebaffa.github.io/blog/2016/02/23/surrounding-yourself-with-the-right-people/">Surrounding yourself with the right people</a>
-    
-    &middot;
-    <a class="label" href="http://alebaffa.github.io/blog/categories/personal">personal</a>
-    </span>
-    &middot; <time>Feb 23, 2016</time></li>
-  
-    <li><a href="http://alebaffa.github.io/blog/2015/11/26/things-to-consider-before-open-sourcing-your-project-written-in-go/">Things to consider before open sourcing your project written in go</a>
-    
-    &middot;
-    <a class="label" href="http://alebaffa.github.io/blog/categories/golang">golang</a>
-    </span>
-    &middot; <time>Nov 26, 2015</time></li>
-  
-    <li><a href="http://alebaffa.github.io/blog/2015/11/10/back-from-dotgo-2015/">Back from dotgo 2015</a>
-    
-    &middot;
-    <a class="label" href="http://alebaffa.github.io/blog/categories/conference">conference</a><a class="label" href="http://alebaffa.github.io/blog/categories/learning">learning</a>
-    </span>
-    &middot; <time>Nov 10, 2015</time></li>
-  
-    <li><a href="http://alebaffa.github.io/blog/about/">About me</a>
-    </span>
-    &middot; <time>Jan 1, 0001</time></li>
-  
-  </ul>
+    <p>It&rsquo;s been a while I&rsquo;m practicing with Go, but I had still never tried its concurrency features so far. My bad.</p>
+
+<p>Fortunately <a href="http://exercism.io">exercism.io</a> has just introduced me to this topic with the exercise <a href="http://exercism.io/exercises/go/parallel-letter-frequency/readme">&ldquo;Parallel Letter Frequency&rdquo; exercise&rdquo;</a>.</p>
+
+<p>The core of my solution is here (I let you read the comments).</p>
+
+<pre><code class="language-go">
+func Frequency(s string) map[rune]int {
+  //DO SOMETHING
+}
+func ConcurrentFrequency(words []string) map[rune]int {
+  // (buffered)channel if type map[run]int with capacity of the lenght of the input (3)
+	channel := make(chan map[rune]int, len(words))
+
+	for _, value := range words {
+		// anonymous function that calls Frequency() 3 times in parallel
+		// and puts the three different results in the channel of capacity 3
+		go func(v string){
+			channel &lt;- Frequency(v)
+		}(value)
+	}
+
+  // Now use the values inside the channel.
+  frequency := map[rune]int
+	// loops 3 times because channel of size 3
+	for range words {
+		for key, value := range &lt;-channel {
+			frequency[key] += value
+		}
+	}
+  return frequency
+}
+</code></pre>
+
+<p>Working with channels is very simple and powerful. There are plenty of things that I still have to learn, but this was a good start. <strong>Thanks Exercism.io</strong>!</p>
+
+  </div>
+  <div id="disqus_thread"></div>
 </div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "alebaffa";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "alebaffa";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 <script src="http://alebaffa.github.io/blog/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 </body>

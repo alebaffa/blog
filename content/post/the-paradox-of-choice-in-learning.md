@@ -29,7 +29,8 @@ What does it mean for developers?
 There's only one way to face the increasing entropy: a solid knowledge of the basics of Software Engineering. Stop choosing the next programming language or technology to learn. The question you should ask yourself should not be "_should I choose between X and Y?_", but instead it should be "_What I want to become? A professional developer or a simple coder?_".
 
 Ask yourself how well do you know things like design patterns, software design, cohesion, coupling, data structures, algorithms...are you able to have a discussion about these things with other technical people? Do you think to have enough knowledge to decide the good strategies to write clean and testable code?<br />
-If your answer is _no_ or you're not sure, well you've narrowed your options. Do a step back, that's where you have to improve.
+If your answer is _no_ or you're not sure, well you've narrowed your options. Do a step back, that's where you have to improve. <br />
+Welcome to the 2nd stage of the [Four Stages of Competence](https://en.wikipedia.org/wiki/Four_stages_of_competence): _conscious incompetence_ (you're not alone, I'm there with you!).
 
 Technologies change every time. Having strong knowledge foundations is what makes the difference between a professional developer and a simple coder.
 
